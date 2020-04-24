@@ -1,3 +1,4 @@
+import 'package:double_back_to_close_app/double_back_to_close_app.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'Constants.dart';
@@ -23,7 +24,12 @@ class HomePage extends StatelessWidget {
           centerTitle: true,
           title: kAppBarText,
         ),
-        body: HomePage1(),
+        body: DoubleBackToCloseApp(
+          child: HomePage1(),
+          snackBar: const SnackBar(
+            content: Text('Tap back again to exit'),
+          ),
+        ),
       ),
     );
   }
@@ -41,7 +47,6 @@ class _HomePage1State extends State<HomePage1> {
   void dispose() {
     // Clean up the controller when the widget is disposed.
     myController.dispose();
-    myController.clear();
     super.dispose();
   }
 
@@ -66,7 +71,6 @@ class _HomePage1State extends State<HomePage1> {
             ),
           ),
         );
-        myController.clear();
       } else {
         Navigator.push(
             context,
