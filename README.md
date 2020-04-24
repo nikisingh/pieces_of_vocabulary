@@ -1,6 +1,10 @@
 # piecesofvocabulary
 
-A new Flutter application.
+A new Flutter dictionary app powered by OwlBot api.
+
+https://www.facebook.com/piecesofvocabulary/
+
+
 
 ## Getting Started
 
