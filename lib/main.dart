@@ -108,9 +108,13 @@ class _HomePage1State extends State<HomePage1> {
                 },
               ),
               enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(15.0),
+                  borderRadius: BorderRadius.circular(10.0),
                   borderSide: BorderSide(
                       color: Colors.brown, style: BorderStyle.solid)),
+              focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                  borderSide: BorderSide(
+                      color: Colors.white, style: BorderStyle.solid)),
               hintStyle: kSearchTextStyle,
               hintText: 'Enter a search term',
             ),
