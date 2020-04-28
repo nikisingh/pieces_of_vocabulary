@@ -7,7 +7,7 @@ import 'WordDefinitions.dart';
 
 void main() => runApp(HomePage());
 
-//TODO - Handle html tags of definition and example - Investment and Sanitizer words returning tags.
+//TODO - Handle html tags of definition and example - Investment and Sanitizer words returning tags. - done
 //TODO - handle image exception
 //TODO - Add Mnemonic , Mark word as favorites
 

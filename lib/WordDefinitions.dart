@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Constants.dart';
+import 'DataTransfromation.dart';
 
 class WordDefinition extends StatefulWidget {
   final String text;
@@ -11,6 +12,8 @@ class WordDefinition extends StatefulWidget {
 }
 
 class _WordDefinitionState extends State<WordDefinition> {
+  DataTransformation d = DataTransformation();
+
   @override
   Widget build(BuildContext context) {
     //print(widget.wordDefinition);
@@ -53,8 +56,9 @@ class _WordDefinitionState extends State<WordDefinition> {
                 subtitle: Column(
                   children: <Widget>[
                     Text(
-                      (widget.wordDefinition[i]['def']) != null
-                          ? (widget.wordDefinition[i]['def'])
+                      d.removeAllHtmlTags(widget.wordDefinition[i]['def']) !=
+                              null
+                          ? d.removeAllHtmlTags(widget.wordDefinition[i]['def'])
                           : '',
                       style: kCardSubTextStyle,
                     ),
@@ -62,8 +66,9 @@ class _WordDefinitionState extends State<WordDefinition> {
                       color: Colors.brown,
                     ),
                     Text(
-                      (widget.wordDefinition[i]['ex']) != null
-                          ? (widget.wordDefinition[i]['ex'])
+                      d.removeAllHtmlTags(widget.wordDefinition[i]['ex']) !=
+                              null
+                          ? d.removeAllHtmlTags(widget.wordDefinition[i]['ex'])
                           : '',
                       style: kCardSubtitleTextStyle,
                     ),
