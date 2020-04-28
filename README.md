@@ -1,7 +1,7 @@
 # piecesofvocabulary
 
 A Flutter dictionary app created with flutter.
-Feature - Every definition fro a word with examples and images.
+Feature - Every definition for a word with examples and images.
 
 Powered by OwlBot api.
 
