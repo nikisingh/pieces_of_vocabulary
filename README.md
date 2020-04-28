@@ -1,8 +1,15 @@
 # piecesofvocabulary
 
-A new Flutter dictionary app powered by OwlBot api.
+A Flutter dictionary app created with flutter.
+Feature - Every definition fro a word with examples and images.
+
+Powered by OwlBot api.
 
 https://www.facebook.com/piecesofvocabulary/
+
+![Finished App](https://github.com/nikisingh/pieces_of_vocabulary/blob/master/pieces_of_vocabulary_gif.gif)
+
+Show some love 💜 and Star ⭐️ the Repository to support the project.
 
 
 
