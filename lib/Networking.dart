@@ -2,7 +2,7 @@ import 'package:http/http.dart';
 import 'dart:convert';
 
 class Networking {
-  String _token = '137e3b14cdf47a1f193b1bffe40c5774f6d2f0e6';
+  String _token = 'enter your token';
   String url = 'https://owlbot.info/api/v4/dictionary/';
 
   Future<List<Map>> getData(String word) async {
